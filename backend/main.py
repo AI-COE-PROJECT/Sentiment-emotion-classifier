@@ -9,6 +9,7 @@ def main() -> None:
     raw_text = input("Enter text to classify: ")
 
     processing_result = process_text(raw_text)
+
     if not processing_result.is_valid:
         print(f"Invalid input: {processing_result.error_message}")
         return
@@ -27,10 +28,17 @@ def main() -> None:
         print(f"Gemini classification failed: {e}")
         return
 
+    agreement = (
+        gemini_result.sentiment == baseline_result.vader_sentiment
+    )
+
     print(f"Gemini sentiment: {gemini_result.sentiment}")
     print(f"Gemini emotion: {gemini_result.emotion}")
+    print(f"Gemini confidence: {gemini_result.confidence_score}")
+    print(f"Gemini explanation: {gemini_result.explanation}")
     print(f"VADER sentiment: {baseline_result.vader_sentiment}")
     print(f"VADER compound score: {baseline_result.compound_score}")
+    print(f"Agreement: {agreement}")
 
 
 if __name__ == "__main__":

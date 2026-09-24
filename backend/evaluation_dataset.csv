@@ -1,0 +1,31 @@
+text,sentiment,emotion
+"My little sister just took her first steps and our whole family burst out laughing and cheering.",positive,joy
+"Watching my grandmother hold my newborn son for the first time melted my heart completely.",positive,love
+"I'm so thankful for my friend who drove across town at midnight to help me with a flat tire.",positive,gratitude
+"I just got accepted into my dream internship in Tokyo, I can't wait to start this adventure!",positive,excitement
+"After months of treatment, the doctor said my dad is finally responding well and we feel hopeful again.",positive,hope
+"I worked for two years on this thesis and seeing my name on the published paper makes me incredibly proud.",positive,pride
+"The test results came back negative and I finally exhaled after weeks of worrying.",positive,relief
+"Sitting on the porch with coffee on a quiet Sunday morning, everything feels just right.",positive,contentment
+"The way she handled that difficult negotiation with such grace and intelligence was truly inspiring.",positive,admiration
+"My dog tried to chase his own tail and slipped on the kitchen floor, I couldn't stop laughing.",positive,amusement
+"It's been a year since my best friend moved away and I still miss our late-night talks.",negative,sadness
+"I am furious that the airline lost my luggage and no one will take responsibility for it.",negative,anger
+"Walking home alone through the dark alley, every sound made my heart pound faster.",negative,fear
+"The milk had gone sour and the smell from the fridge made me gag.",negative,disgust
+"I studied so hard for weeks but still failed the exam by two points.",negative,disappointment
+"This is the third time the app crashed and deleted all my progress without saving.",negative,frustration
+"My interview is tomorrow morning and I can't sleep, my mind keeps racing through worst-case scenarios.",negative,anxiety
+"I snapped at my mom yesterday and I can't shake the guilt, she didn't deserve that.",negative,guilt
+"I took credit for my teammate's idea in the meeting and I feel deeply ashamed of myself.",negative,shame
+"Everyone went home for the holidays and I'm alone in this empty dorm room with nothing to do.",neutral,loneliness
+"Oh wonderful, my flight is delayed again. Best day ever.",negative,sarcasm
+"The train departs from platform 4 at 6:45 pm and arrives at 8:10 pm.",neutral,neutral
+"The quarterly report is due on Friday and the meeting is scheduled for 2 pm.",neutral,neutral
+"I didn't expect to bump into my childhood teacher at the airport after fifteen years.",neutral,surprise
+"I've been staring at the clock for an hour, this lecture feels endless.",neutral,boredom
+"The instructions say to turn left but the map shows the destination on the right, I'm not sure which to follow.",neutral,confusion
+"I wonder how they built those ancient temples without modern machinery.",neutral,curiosity
+"I found my old high school yearbook and spent an hour flipping through the faded photos.",neutral,nostalgia
+"My colleague got the promotion I applied for and I keep thinking about what I could have done differently.",neutral,envy
+"I mispronounced my coworker's name during introductions and everyone turned to look at me.",neutral,embarrassment
