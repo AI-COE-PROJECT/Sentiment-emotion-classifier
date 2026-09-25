@@ -1,0 +1,13 @@
+/* Global baseline. All component styling lives in the MUI theme and `sx` props. */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
