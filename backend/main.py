@@ -1,8 +1,32 @@
-from processing_layer import process_text
-from baseline import analyze_baseline
-from prompt import build_system_prompt, build_user_message
-from llm_client import get_classification
-from response_schema import ClassificationResponse
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+try:
+    from routes import router
+    from processing_layer import process_text
+    from baseline import analyze_baseline
+    from prompt import build_system_prompt, build_user_message
+    from llm_client import get_classification
+    from response_schema import ClassificationResponse
+except ImportError:
+    from backend.routes import router
+    from backend.processing_layer import process_text
+    from backend.baseline import analyze_baseline
+    from backend.prompt import build_system_prompt, build_user_message
+    from backend.llm_client import get_classification
+    from backend.response_schema import ClassificationResponse
+
+app = FastAPI(title="SentimentLab")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.include_router(router)
 
 
 def main() -> None:
